@@ -30,7 +30,7 @@ userSchema.pre('save', async function () {
     this.password = await bcrypt.hash(this.password, 10);
 });
 
-
+//generics in typescript
 const User = models?.User || model<IUser>("User", userSchema);
 
 
